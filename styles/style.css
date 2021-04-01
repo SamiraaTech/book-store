@@ -1,0 +1,202 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: IRANSansWeb;
+}
+body{
+    margin: 0 auto;
+    background: #FAFAFA;
+    direction: rtl;
+}
+
+/*
+-------------------------------
+Fonts (IRANSansWeb)
+--------------------------------
+*/
+
+@font-face {
+    font-family: IRANSansWeb_Bold;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/IRANSansWeb_Bold.eot');
+    src: url('../fonts/IRANSansWeb_Bold.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/IRANSansWeb_Bold.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/IRANSansWeb_Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSansWeb_Medium;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/IRANSansWeb_Medium.eot');
+    src: url('../fonts/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/IRANSansWeb_Medium.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/IRANSansWeb_Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSansWeb_Light;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/IRANSansWeb_Light.eot');
+    src: url('../fonts/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/IRANSansWeb_Light.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/IRANSansWeb_Light.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: IRANSansWeb;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/IRANSansWeb.eot');
+    src: url('../fonts/IRANSansWeb.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/IRANSansWeb.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/IRANSansWeb.ttf') format('truetype');
+}
+
+/*
+------------------------------
+styles
+------------------------------
+*/
+
+#top-content h1{
+    font-family: IRANSansWeb_Bold;
+    font-size: 1.9em;
+    padding: 20px 0;
+    color : #1c2730;
+        
+}
+h2{
+    font-family: IRANSansWeb_Medium;
+    text-align: center;
+    padding : 20px 0;
+}
+
+header#top-content{
+    background: #29c0ac;
+}
+
+.search{
+    padding: 0px 10px;
+}
+.search #search-product{
+    width: 50%;
+    padding: 10px;
+    border-radius: 15px;
+    resize: vertical;
+    border: 1px solid #E1BEE7;
+    outline: 0;
+    font-size: 0.9em;
+}
+.exist{
+    padding: 10px 0px;
+    text-align: right;
+}
+label #available-products{
+    margin-left: 10px;
+}
+select#sort{
+    margin: 1em 0;
+    font-size: 0.9em;
+    border: 1px solid #E1BEE7;
+}
+#add-product{
+    text-align: center;
+}
+#add-product input , #product-title  
+, #product-price  {
+    width: 30%;
+    margin : 1em 0;
+    padding: 10px;
+    border-radius: 15px;
+    resize: vertical;
+    border: 1px solid #E1BEE7;
+    outline: 0;
+    font-size: 0.8em;
+    font-family: IRANSansWeb_Light;
+}
+
+#add-product button{
+    border-radius: 15px;
+    background:#29c0ac;
+    color: #1c2730;
+    border: none;
+    padding: 10px;
+    width: 9%;
+    resize: vertical;
+    margin-top: 0;
+    margin-bottom: 0;
+    outline: 0;  
+    line-height: normal;
+}
+
+.product-row{
+    padding: 2em;
+    margin: 2em 6em;
+    border-radius: 10px;
+    box-shadow: 0 0 25px 5px rgba(0,0,0,.07);
+    min-width: 0;
+    background-color: #fff;
+    background-clip: border-box;
+    text-align: center;
+}
+
+#result .product-row p{
+    display: inline;
+    margin: 0 1.4em;
+    color: #616161;
+}
+#result a {
+
+    text-decoration: none;
+    color: #29c0ac;
+    font-size: 1.2em;
+    padding: .1em;
+}
+
+#result button, #remove-product {
+    width: 9%;
+    background: #9af3e7;
+    color: #29c0ac;
+    border-radius: 15px;
+    resize: vertical;
+    margin-top: 0;
+    margin-bottom: 0;
+    outline: 0;
+    padding: 10px;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    font-size: .8em;
+}
+main.edit-product{
+    text-align: center;
+    padding: 3em 0;
+}
+.redirect{
+    text-align: center;
+}
+.redirect a{
+    text-decoration: none;
+    color:#29c0ac;
+    font-size: 1.2em;
+    transition: all 0.5s ease ;
+}
+.redirect a:hover{
+    text-decoration: none;
+    color: #1c2730;
+}
+
+#last-edit{
+    color: #616161;
+    margin: 2em;
+}
+
+.edit-product .container{
+    text-align: center;
+}

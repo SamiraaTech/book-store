@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>مدیریت محصولات</title>
+        <link rel="stylesheet" type="text/css" href="./styles/style.css">
+        <link rel="stylesheet" type="text/css" href='./styles/css/bootstrap.min.css'>
+        <link rel="stylesheet" type="text/css" href="./styles/css/bootstrap-grid.css">
+    </head>
+
+    <body>
+        <header id="top-content">
+            <div class="container">
+                <div class="row">
+                    <h1>فروشگاه کتاب!</h1>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">               
+                    <h2> </h2>
+                    <div class="row justify-content-md-center">
+                        <div class="search col-8">
+                            <input id="search-product" type="text" placeholder="جستجو...">
+                        </div>
+                        <div class="exist col-4">
+                            <label>
+                                <input id="available-products" type="checkbox">کتاب های موجود
+                            </label>
+                        </div>
+                    </div>
+                
+                    <div class="row justify-content-md-center">
+                        <select id='sort'>
+                            <option id='byEdited'>مرتب سازی بر اساس آخرین ویرایش</option>
+                            <option id='byCreated'>مرتب سازی بر اساس تاریخ ساختن</option>
+                        </select>
+                    </div>
+                    
+                    <div class="row justify-content-md-center">
+                        <div class="col col-12">
+                            <form id="add-product">
+                                <input type="text" name='productTitle' placeholder="عنوان محصول">
+                                <input type="text" name='productPrice' placeholder="قیمت محصول">
+                                <button class="btn btn-primary">افزودن</button>
+                            </form>
+                            <div id="result">
+                                <div class="product-row"></div>
+                            </div>   
+                       </div>
+                    </div>      
+                </div>
+            </main>
+            
+        <script src="./scripts/moment.js"></script>
+        <script src='./scripts/jalali-moment.js'></script>
+        <script src="./scripts/uuid.js"></script>
+        <script src="./scripts/functions.js"></script>
+        <script src="./scripts/app.js"></script>
+
+        <script src="./scripts/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="./scripts/js/popper.min.js"></script>
+        <script src='./scripts/js/bootstrap.min.js'></script>
+    </body>
+</html>
